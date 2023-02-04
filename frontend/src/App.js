@@ -1,14 +1,15 @@
 import React, { Children } from 'react';
+import { useSelector } from 'react-redux'
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Outlet
 } from "react-router-dom";
-import Navbar from './component/Navbar';
+import Navbar from './component/Navbar/Navbar';
 import Footer from './component/Footer';
-import { Counter } from './features/counter/Counter';
 import { Cart, Home, Product, NotFound } from './pages';
+import './styles/templates.scss'
 
 const Layout = () => {
   return <>

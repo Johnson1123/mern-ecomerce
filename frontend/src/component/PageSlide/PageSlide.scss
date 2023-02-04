@@ -1,0 +1,77 @@
+@import '../../styles/varibles.scss';
+.app__slide{
+    height: calc(100vh - 70px);
+    .slide__container{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+        .head-text{
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            width: 50%;
+            color: $primaryColor;
+            z-index: 3;
+            font-size: 36px;
+            line-height: 50px;
+            @media screen and (min-width: 767px) {
+                top: 25%;
+                font-size: 56px;
+                width: 65%;
+                line-height: 65px;
+            }
+        }
+        .small-text{
+            position: absolute;
+            top: 18%;
+            left: 10%;
+            font-size: 18px;
+            color: $primaryColor;
+            letter-spacing: 10px;
+            z-index: 3;
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: flex;
+            }
+        }
+        .p-text{
+            position: absolute;
+            bottom: 45%;
+            left: 10%;
+            font-size: 20px;
+            color: $primaryColor;
+            z-index: 3;
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: flex;
+            }
+        }
+        .btn__shop{
+            position: absolute;
+            bottom: 28%;
+            left: 50%;
+            z-index: 3;
+            @media screen and (min-width: 768px) {
+                left: 10%;
+                padding: 1.5rem 2.5rem;
+            }
+        }
+    }
+}

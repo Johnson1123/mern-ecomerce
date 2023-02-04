@@ -1,0 +1,52 @@
+@import './varibles.scss';
+.container{
+    width: 100%;
+    @extend .flex-center;
+}
+.wrapper{
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    @extend .flex;
+    @media screen and (min-width: 767px) {
+        padding: 1rem 4rem;
+    }
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-text{
+    font-family: $primaryFont;
+    font-size: $largeSize;
+    line-height: 44px;
+    color: $secondaryColor;
+    margin-bottom: 32px;
+}
+.p-text{
+    font-family: $primaryFont;
+    font-size: $normalSize;
+    line-height: 24px;
+    color: $secondaryColor;
+    margin-bottom: 5px;
+}
+.small-text{
+    font-family: $primaryFont;
+    font-size: $smallSize;
+    line-height: 18px;
+    color: $secondaryColor; 
+}
+.d-none{
+    display: none !important;
+}
+.svg{
+    width: 20px;
+    height: 20px;
+}
+

@@ -1,0 +1,51 @@
+@import '../../styles/varibles.scss';
+.search__container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    .search__form{
+        height: 45px;
+        width: 70%;
+        background-color: $primaryColor;
+        border-radius: 5px;
+        input{
+            flex: 1;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            padding-left: 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .svg__container{
+            height: 100%;
+            width: 18%;
+            background-color: $pinkColor;
+            border-radius: 5px;
+            svg{
+                width: 35px;
+                padding-left: .5rem;
+                color: $primaryColor;
+            }
+        }
+        
+    }
+    .search__close{
+        background-color: $primaryColor;
+        padding: .5rem .8rem;
+        margin-top: 40px;
+        border-radius: 5px;
+        svg{
+            width: 20px;
+            margin-right: 5px;
+        }
+        .p-text{
+            margin-bottom: 0;
+        }
+    }
+}

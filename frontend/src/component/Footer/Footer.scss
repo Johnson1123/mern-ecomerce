@@ -1,0 +1,128 @@
+@import '../../styles/varibles.scss';
+.app__footer{
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: $secondaryColor;
+    @media screen and (min-width: 768px) {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+    }
+    .wrapper{
+        padding: 4rem 2rem;
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .footer__left{
+            @media screen and (min-width: 768px) {
+                padding: 0 1rem;
+            }
+            .footer__logo-container{
+                align-items: center;
+                padding: 10px 0;
+                @media screen and (min-width: 768px) {
+                    padding: 0px;
+                }
+                img{
+                    width: 40px;
+                    margin-right: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    color: $secondaryColor;
+                    font-style: italic;
+                    font-family: $secondaryFont;
+                    width: 900;
+                    color: $primaryColor;
+                    line-height: none;
+                    margin-bottom: 0;
+                }
+                @media screen and (min-width: 767px) {
+                    margin-right: auto;
+                    margin-left: 10px;
+                }
+            }
+            .footer__left-text{
+                color: $primaryColor;
+                line-height: 27px;
+                margin-top: 30px;
+                text-align: justify;
+                @media screen and (min-width: 768px) {
+                    margin-top: 20px;
+                }
+            }
+            .footer__left-icons{
+                margin-top: 20px;
+            }
+        }
+        .footer__center{
+            address{
+                margin-top: 20px;
+                
+                .p-text{
+                    color: $primaryColor;
+                    line-height: 3;
+                    @media screen and (min-width: 768px) {
+                        line-height: 2.5;
+                    }
+                    a{
+                        text-decoration: none;
+                        margin-left: 5px;
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+        .footer__right{
+            .footer-right-box{
+                align-items: center;
+                margin-top: 15px;
+                svg{
+                    margin-right: 20px;
+                    color: $primaryColor;
+                }
+                .p-text{
+                    text-decoration: none;
+                    color: $primaryColor;
+                    cursor: pointer;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .newsletter{
+            margin-bottom: 30px;
+            @media screen and (min-width: 768px) {
+                .app__newsletter{
+                    margin-top: 20px;
+                    width: 80%;
+                }
+            }
+        }
+
+
+        // general Class
+        .head-footer{
+            margin-top: 70px;
+            color: $primaryColor;
+            margin-bottom: 0;
+            font-family: $secondaryFont;
+            @media screen and (min-width: 768px) {
+                margin-top: 0;
+                
+            }
+        }
+    }
+}
+
+.footer__box{
+    width: 100%;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        width: 23%;
+        
+    }
+}

@@ -7,7 +7,7 @@ import {
   Outlet
 } from "react-router-dom";
 import Navbar from './component/Navbar/Navbar';
-import Footer from './component/Footer';
+import Footer from './component/Footer/Footer';
 import { Cart, Home, Product, NotFound } from './pages';
 import './styles/templates.scss'
 

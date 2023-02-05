@@ -1,0 +1,29 @@
+@import '../../../styles/varibles.scss';
+.app__newsletter{
+    width: 100%;
+    background-color: transparent;
+    padding: .3rem;
+    border: 1px solid $primaryColor;
+    border-radius: 2px;
+    input{
+        width: 70%;
+        background-color: transparent;
+        border: none;
+        color: $primaryColor;
+        height: 30px;
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        background-color: transparent;
+        width: 40%;
+        border: none;
+        color: $primaryColor;
+        padding: 0 1rem;
+        margin-bottom: 0;
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import '../../styles/varibles.scss';
+.icon{
+    color: $primaryColor;
+    text-decoration: none;
+    margin-right: 25px;
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+}
